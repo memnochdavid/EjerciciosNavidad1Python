@@ -25,7 +25,8 @@ def contar_bolas(lista, tam):
     return [bola for bola in lista if bola>=tam]
 
 #ejercicio04
-def sorteo_navidad(regalos, gente):
+def sorteo_navidad(regalos, gente)->list:
+    
 
 
 #ejercicios
