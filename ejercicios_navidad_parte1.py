@@ -1,4 +1,7 @@
 #ejercicio01
+import random
+
+
 def arbol_navidad(n)->str:
     arbol=""
     aux=0
@@ -26,6 +29,13 @@ def contar_bolas(lista, tam):
 
 #ejercicio04
 def sorteo_navidad(regalos, gente)->list:
+    random.shuffle(regalos)
+    random.shuffle(gente)
+    lista=[]
+    for i in range(0, len(regalos)):
+        lista.append(gente[i])
+        lista.append(regalos[i])
+    return lista
     
 
 
@@ -44,3 +54,8 @@ while not stop:
             tamanio=5
             lista_bolas=(3,4,5,3,7,9,6,43,2,67,8,3)
             print(contar_bolas(lista_bolas, tamanio))
+        case 4:
+            regalos=["Patines", "Guantes", "Trineo", "Muñeco", "Playboy"]
+            gente=["Juanito", "Jaimito", "Jorgito", "Pepito", "Albertito"]
+            print(f"Los regalos y sus dueños son: {str(sorteo_navidad(regalos, gente))}")
+        case 5:
