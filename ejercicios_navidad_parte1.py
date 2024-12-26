@@ -56,7 +56,8 @@ def sec_natal(lista_personas):
     return mayores_edad
 
 #ejercicio07
-#SUDOKU
+def ejercicio7():
+    print("El ejercicio 7 está en otro archivo *.py")
 
 
 ########################################################################################################################
@@ -86,4 +87,5 @@ while not stop:
             gentes = [("Maria", 20), ("Carlos", 17), ("Luis", 18), ("Ana", 25)]
             resultado = sec_natal(gentes)
             print(resultado)
-        #case 7:
+        case 7:
+            ejercicio7()

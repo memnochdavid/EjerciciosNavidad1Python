@@ -38,7 +38,7 @@ def resuelve_n_reinas(tablero, fila=0):
 
     return False
 
-
+#ejecuta
 n = 4
 tab = tablero(n)
 
