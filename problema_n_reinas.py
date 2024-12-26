@@ -1,5 +1,5 @@
 def tablero(n):
-    return [[0 for _ in range(n)] for _ in range(n)]
+    return [["0" for _ in range(n)] for _ in range(n)]
 
 def imprime_tablero(tablero):
     for fila in tablero:
@@ -34,12 +34,12 @@ def resuelve_n_reinas(tablero, fila=0):
             if resuelve_n_reinas(tablero, fila + 1):
                 return True
 
-            tablero[fila][columna] = 0
+            tablero[fila][columna] = "0"
 
     return False
 
 
-n = 8
+n = 4
 tab = tablero(n)
 
 if resuelve_n_reinas(tab):
